@@ -6,21 +6,16 @@ namespace C_Sharp_Basics
     {
         static void Main(string[] args)
         {
-            string someText = "Here is some text";
-            int num = 10;
-            double num2 = 20.2;
-            bool isOdd = true;
-            
-            Console.WriteLine("Enter Your Number: \n");  
-            string name = Console.ReadLine();
-            var anything = 50;
+            // Converted string to Int
+            Console.WriteLine("Enter a number: ");
+            int num = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Your Number is = " + num);
 
-            Console.WriteLine(someText);
-            Console.WriteLine(num);
-            Console.WriteLine(num2);
-            Console.WriteLine(isOdd);
-            Console.WriteLine("Hello " + name);
-            Console.WriteLine(anything);
+            int num2 = 20;
+
+            int add = num + num2;
+
+            Console.WriteLine("Add = " + add);
 
         }
     }
