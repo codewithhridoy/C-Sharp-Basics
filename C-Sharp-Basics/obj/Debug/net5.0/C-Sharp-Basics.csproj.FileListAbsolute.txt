@@ -1,0 +1,16 @@
+/home/hridoy/Desktop/C-Sharp-Basics/C-Sharp-Basics/bin/Debug/net5.0/C-Sharp-Basics
+/home/hridoy/Desktop/C-Sharp-Basics/C-Sharp-Basics/bin/Debug/net5.0/C-Sharp-Basics.deps.json
+/home/hridoy/Desktop/C-Sharp-Basics/C-Sharp-Basics/bin/Debug/net5.0/C-Sharp-Basics.runtimeconfig.json
+/home/hridoy/Desktop/C-Sharp-Basics/C-Sharp-Basics/bin/Debug/net5.0/C-Sharp-Basics.runtimeconfig.dev.json
+/home/hridoy/Desktop/C-Sharp-Basics/C-Sharp-Basics/bin/Debug/net5.0/C-Sharp-Basics.dll
+/home/hridoy/Desktop/C-Sharp-Basics/C-Sharp-Basics/bin/Debug/net5.0/ref/C-Sharp-Basics.dll
+/home/hridoy/Desktop/C-Sharp-Basics/C-Sharp-Basics/bin/Debug/net5.0/C-Sharp-Basics.pdb
+/home/hridoy/Desktop/C-Sharp-Basics/C-Sharp-Basics/obj/Debug/net5.0/C-Sharp-Basics.csprojAssemblyReference.cache
+/home/hridoy/Desktop/C-Sharp-Basics/C-Sharp-Basics/obj/Debug/net5.0/C-Sharp-Basics.GeneratedMSBuildEditorConfig.editorconfig
+/home/hridoy/Desktop/C-Sharp-Basics/C-Sharp-Basics/obj/Debug/net5.0/C-Sharp-Basics.AssemblyInfoInputs.cache
+/home/hridoy/Desktop/C-Sharp-Basics/C-Sharp-Basics/obj/Debug/net5.0/C-Sharp-Basics.AssemblyInfo.cs
+/home/hridoy/Desktop/C-Sharp-Basics/C-Sharp-Basics/obj/Debug/net5.0/C-Sharp-Basics.csproj.CoreCompileInputs.cache
+/home/hridoy/Desktop/C-Sharp-Basics/C-Sharp-Basics/obj/Debug/net5.0/C-Sharp-Basics.dll
+/home/hridoy/Desktop/C-Sharp-Basics/C-Sharp-Basics/obj/Debug/net5.0/ref/C-Sharp-Basics.dll
+/home/hridoy/Desktop/C-Sharp-Basics/C-Sharp-Basics/obj/Debug/net5.0/C-Sharp-Basics.pdb
+/home/hridoy/Desktop/C-Sharp-Basics/C-Sharp-Basics/obj/Debug/net5.0/C-Sharp-Basics.genruntimeconfig.cache
