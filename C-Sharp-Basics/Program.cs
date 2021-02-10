@@ -6,22 +6,31 @@ namespace C_Sharp_Basics
     {
         static void Main(string[] args)
         {
-            // If Else if Else
-            Console.WriteLine("Enter a number: ");
-            int num = Convert.ToInt32(Console.ReadLine());
-
-            if (num < 0)
+            // Switch Case
+            int day = 5;
+            switch (day) 
             {
-                Console.WriteLine("The number is negative.");
-            }
-
-            else if(num > 0)
-            {
-                Console.WriteLine("The number is Positive.");
-            }
-            else
-            {
-                Console.WriteLine("The number is Zero.");
+            case 1:
+                Console.WriteLine("Saturday");
+                break;
+            case 2:
+                Console.WriteLine("Sunday");
+                break;
+            case 3:
+                Console.WriteLine("Monday");
+                break;
+            case 4:
+                Console.WriteLine("Tuesday");
+                break;
+            case 5:
+                Console.WriteLine("Wednesday");
+                break;
+            case 6:
+                Console.WriteLine("Thursday");
+                break;
+            case 7:
+                Console.WriteLine("Friday");
+                break;
             }
         }
     }
