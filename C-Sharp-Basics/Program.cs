@@ -6,20 +6,37 @@ namespace C_Sharp_Basics
     {
         static void Main(string[] args)
         {
-            string str = "Hridoy";
-            string str2 = "Ahmed";
+            // Strings
 
-            bool isEqual = str.Equals(str2, StringComparison.OrdinalIgnoreCase);
+            string fname = "Hridoy";
+            string lname = "Ahmed";
+            Console.WriteLine(fname.Length); // Length
 
-            Console.WriteLine(isEqual); // False
+            // Lower and Uper Case
+            Console.WriteLine(fname.ToLower());
+            Console.WriteLine(fname.ToUpper());
 
-            string formattedString = string.Format("{0} {1} from Bangladesh", str, str2);
+            // Concat
+            string name = string.Concat(fname, lname);
+            Console.WriteLine(name);
 
-            Console.WriteLine(formattedString);
+            // Access Strings
+            Console.WriteLine(name[0]);
 
+            // Indexing
+            Console.WriteLine(name.IndexOf("i"));
 
+            // Substring
+            Console.WriteLine(name.Substring(2, 3)); // starts from, ends where from start
 
+            // Empty String
+            string emptyString = string.Empty;
 
+            Console.WriteLine(emptyString);
+
+            // Replace
+            string replacedString = name.Replace("Hridoy", "Hridoy ");
+            Console.WriteLine(replacedString);
 
         }
     }
