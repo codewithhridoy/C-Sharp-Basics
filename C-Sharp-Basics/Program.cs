@@ -6,38 +6,23 @@ namespace C_Sharp_Basics
     {
         static void Main(string[] args)
         {
-            // Strings
+            // If Else if Else
+            Console.WriteLine("Enter a number: ");
+            int num = Convert.ToInt32(Console.ReadLine());
 
-            string fname = "Hridoy";
-            string lname = "Ahmed";
-            Console.WriteLine(fname.Length); // Length
+            if (num < 0)
+            {
+                Console.WriteLine("The number is negative.");
+            }
 
-            // Lower and Uper Case
-            Console.WriteLine(fname.ToLower());
-            Console.WriteLine(fname.ToUpper());
-
-            // Concat
-            string name = string.Concat(fname, lname);
-            Console.WriteLine(name);
-
-            // Access Strings
-            Console.WriteLine(name[0]);
-
-            // Indexing
-            Console.WriteLine(name.IndexOf("i"));
-
-            // Substring
-            Console.WriteLine(name.Substring(2, 3)); // starts from, ends where from start
-
-            // Empty String
-            string emptyString = string.Empty;
-
-            Console.WriteLine(emptyString);
-
-            // Replace
-            string replacedString = name.Replace("Hridoy", "Hridoy ");
-            Console.WriteLine(replacedString);
-
+            else if(num > 0)
+            {
+                Console.WriteLine("The number is Positive.");
+            }
+            else
+            {
+                Console.WriteLine("The number is Zero.");
+            }
         }
     }
 }
