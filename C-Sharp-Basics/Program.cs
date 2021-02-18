@@ -1,6 +1,4 @@
 ﻿using System;
-
-// Use System.Linq
 using System.Linq;
 
 namespace C_Sharp_Basics
@@ -9,48 +7,166 @@ namespace C_Sharp_Basics
     {
         static void Main(string[] args)
         {
-            // Arrays
-            string [] cars = new string[3];
-            cars[0] = "Volvo";
-            cars[1] = "Tesla";
-            cars[2] = "Ford";
 
-            Console.WriteLine(cars[2]); //Ford
-
-            int [] myNum = {100, 20, 300, 40};
-
-            Console.WriteLine(myNum[3]);
-
-            // Length
-            Console.WriteLine(myNum.Length);
-
-            // Loop Through Array
-            for (int i = 0; i < myNum.Length; i++)
+            // Simple Calculator using Methods
+            
+            while(true)
             {
-                Console.WriteLine(myNum[i]);
+                Console.WriteLine("Type 'a/A' to Add:");
+                Console.WriteLine("Type 's/S' to Subtract:");
+                Console.WriteLine("Type 'm/M' to Multiply:");
+                Console.WriteLine("Type 'd/D' to Devide:");
+                Console.WriteLine("Type 'r/R' for Remainder:");
+                Console.WriteLine("Type 'e/E' for Exit:");
+            
+                string checkInput = Console.ReadLine();
+
+                if (checkInput == "e" || checkInput == "E")
+                {
+                    break;
+                }
+
+                else if (checkInput == "a" || checkInput == "A")
+                {
+                    Console.Write("Enter your First Number : ");
+                    int firstNumber = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("Enter your Second Number : ");
+                    int secondNumber = Convert.ToInt32(Console.ReadLine());
+
+                    int sum = Add(firstNumber, secondNumber);
+                    Console.WriteLine("Sum = " + sum);
+                    
+                    Console.WriteLine("Type 'y/Y' to Continue.");
+
+                    string continueCheck = Console.ReadLine();
+
+                    if (checkInput == "y" || checkInput == "Y")
+                    {
+                        continue;
+                    }
+
+                }
+
+                else if (checkInput == "s" || checkInput == "S")
+                {
+                    Console.Write("Enter your First Number : ");
+                    int firstNumber = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("Enter your Second Number : ");
+                    int secondNumber = Convert.ToInt32(Console.ReadLine());
+
+                    int subResult = Subtract(firstNumber, secondNumber);
+                    Console.WriteLine("Subtract = " + subResult);
+                    
+                    Console.WriteLine("Type 'y/Y' to Continue.");
+
+                    string continueCheck = Console.ReadLine();
+
+                    if (checkInput == "y" || checkInput == "Y")
+                    {
+                        continue;
+                    }
+
+                }
+
+                else if (checkInput == "m" || checkInput == "M")
+                {
+                    Console.Write("Enter your First Number : ");
+                    int firstNumber = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("Enter your Second Number : ");
+                    int secondNumber = Convert.ToInt32(Console.ReadLine());
+
+                    int mulResult = Multiply(firstNumber, secondNumber);
+                    Console.WriteLine("Multiply = " + mulResult);
+                    
+                    Console.WriteLine("Type 'y/Y' to Continue.");
+
+                    string continueCheck = Console.ReadLine();
+
+                    if (checkInput == "y" || checkInput == "Y")
+                    {
+                        continue;
+                    }
+
+                }
+
+                else if (checkInput == "d" || checkInput == "D")
+                {
+                    Console.Write("Enter your First Number : ");
+                    int firstNumber = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("Enter your Second Number : ");
+                    int secondNumber = Convert.ToInt32(Console.ReadLine());
+
+                    int divResult = Divide(firstNumber, secondNumber);
+                    Console.WriteLine("Divide = " + divResult);
+                    
+                    Console.WriteLine("Type 'y/Y' to Continue.");
+
+                    string continueCheck = Console.ReadLine();
+
+                    if (checkInput == "y" || checkInput == "Y")
+                    {
+                        continue;
+                    }
+                }
+
+                else if (checkInput == "r" || checkInput == "R")
+                {
+                    Console.Write("Enter your First Number : ");
+                    int firstNumber = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("Enter your Second Number : ");
+                    int secondNumber = Convert.ToInt32(Console.ReadLine());
+
+                    int remResult = Remainder(firstNumber, secondNumber);
+                    Console.WriteLine("Remainder = " + remResult);
+                    
+                    Console.WriteLine("Type 'y/Y' to Continue.");
+
+                    string continueCheck = Console.ReadLine();
+
+                    if (checkInput == "y" || checkInput == "Y")
+                    {
+                        continue;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Sorry Wrong Keyword. Try agian!");
+                    continue;
+                }
+
             }
 
-            // Foreach
-            foreach(string i in cars)
-            {
-                Console.WriteLine(i);
-            }
-
-
-            // Sort Arrays
-            Array.Sort(myNum); // 20, 40, 100, 300
-            Console.WriteLine(myNum[0]);
-
-            for (int i=0; i<myNum.Length; i++)
-            {
-                Console.WriteLine(myNum[i]);
-            }
-
-            // Max, Min, Sum
-            Console.WriteLine(myNum.Max());
-            Console.WriteLine(myNum.Min());
-            Console.WriteLine(myNum.Sum());
 
         }
+        static int Add(int firstNumber, int secondNumber)
+        {
+            int result = firstNumber + secondNumber;
+            return result;
+        }
+
+        static int Subtract(int firstNumber, int secondNumber)
+        {
+            int result = firstNumber - secondNumber;
+            return result;
+        }
+
+        static int Multiply(int firstNumber, int secondNumber)
+        {
+            int result = firstNumber * secondNumber;
+            return result;
+        }
+
+        static int Divide(int firstNumber, int secondNumber)
+        {
+            int result = firstNumber / secondNumber;
+            return result;
+        }
+
+        static int Remainder(int firstNumber, int secondNumber)
+        {
+            int result = firstNumber % secondNumber;
+            return result;
+        }
+
     }
 }
