@@ -3,11 +3,16 @@ using System.Linq;
 
 namespace C_Sharp_Basics
 {
+    // Encapsulation
     class Person
-    {
+    {   
+        private string name;
         // property
         public string Name
-        { get; set; }
+        {
+            get {return name;}
+            set {name =  value;}
+        }
     }
     class Program
     {
